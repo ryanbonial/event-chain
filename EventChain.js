@@ -57,6 +57,13 @@ class EventChain {
     this.eventChain.push({...newEvent, id: newEventId, hash: newHash });
   }
 
+  // Default projection. Allow custom projection functions in the future?
+  // Relies on the event type to be in the expected format of ENTITYTYPE_ACTION
+  GetProjection(entityType, id) {    
+    const eventsForId = this.eventChain.filter(event => event.data.id === id && event.eventType.split('_')[0] === entityType);    
+    return eventsForId.reduce((summation, event) => ({ ...summation, ...event.data }), {});         
+  }
+
   PrintChain() {
     console.log(JSON.stringify(this.eventChain, null, 3))
   }
