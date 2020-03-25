@@ -42,8 +42,16 @@ class EventChain {
     return eventChainIsValid;
   }
 
-  AddEvent(event) {
-    const newEvent = { eventType: event.eventType, data: event.data, metaData: event.metaData }
+  AddEvent(eventType, data) {
+    const rightNow = new Date();
+    const timeStamp = rightNow.toISOString();
+    const metaData = {
+      createdBy: "Ryan",
+      createdDate: timeStamp,
+      previousHash: this.eventChain.length === 0 ? "0" : [...this.eventChain].pop().hash
+    };
+
+    const newEvent = { eventType, data, metaData };
     const newHash = this.MakeHash(newEvent);
     const newEventId = uuidv4();
     this.eventChain.push({...newEvent, id: newEventId, hash: newHash });

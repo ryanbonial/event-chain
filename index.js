@@ -2,19 +2,11 @@ var EventChain = require('./EventChain');
 
 const eventChain = new EventChain();
 
-eventChain.AddEvent({
-  eventType: "MOVIE_CREATED",
-  data: {
-    id: 1,
-    title: 'Hackers',
-    released: '1995',    
-  },
-  metaData: {
-    createdBy: "Ryan",
-    createdDate: "2020-03-24T10:16:29.356Z",
-    previousHash: "0"
-  },
-});
+eventChain.AddEvent("MOVIE_CREATE", { id: 1, title: 'Hackers', released: '1995' });
+
+eventChain.PrintChain();
+
+eventChain.AddEvent("MOVIE_UPDATE_RATING", { mpaaRating: 'PG-13' });
 
 eventChain.PrintChain();
 
