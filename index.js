@@ -10,4 +10,4 @@ eventChain.AddEvent("MOVIE_UPDATE_RATING", { mpaaRating: 'PG-13' });
 
 eventChain.PrintChain();
 
-console.log('EventChain is valid?', eventChain.EventChainValid());
+console.log('EventChain is valid?', eventChain.isValid());

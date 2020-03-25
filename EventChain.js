@@ -15,7 +15,7 @@ class EventChain {
     return this.MakeHash(eventObject) === expectedHashValue;  
   }
 
-  EventChainValid() {
+  isValid() {
     let eventChainIsValid = true;
     
     // Verify hash validity for each event
