@@ -8,23 +8,38 @@
      },
      "metaData": {
         "createdBy": "Ryan",
-        "createdDate": "2020-03-25T18:08:34.673Z",
+        "createdDate": "2020-03-25T20:44:19.556Z",
         "previousHash": "0"
      },
-     "id": "eeb3da7a-5a75-4b4c-8e62-121e99954ecb",
-     "hash": "wo1SQJmfiocYyvFEvizfOxF/MgEQTZuG/Wa5sBwUhoA="
+     "id": "208a6a89-0ea5-435c-8a75-cffcb06f0101",
+     "hash": "043sZA57xXKoJPC6vyMSk1DA9Uyv07kvqxeqATWIR1Q="
   },
   {
      "eventType": "MOVIE_UPDATE_RATING",
      "data": {
+        "id": 1,
+        "mpaaRating": "PG"
+     },
+     "metaData": {
+        "createdBy": "Ryan",
+        "createdDate": "2020-03-25T20:44:19.568Z",
+        "previousHash": "043sZA57xXKoJPC6vyMSk1DA9Uyv07kvqxeqATWIR1Q="
+     },
+     "id": "edbf81c3-d135-4098-8e78-57a2267148e0",
+     "hash": "B3GCqf1W7PTOv00IaJL6mDHtkI0BJdm6uKtse+E8al8="
+  },
+  {
+     "eventType": "MOVIE_UPDATE_RATING",
+     "data": {
+        "id": 1,
         "mpaaRating": "PG-13"
      },
      "metaData": {
         "createdBy": "Ryan",
-        "createdDate": "2020-03-25T18:08:34.681Z",
-        "previousHash": "wo1SQJmfiocYyvFEvizfOxF/MgEQTZuG/Wa5sBwUhoA="
+        "createdDate": "2020-03-25T20:44:19.568Z",
+        "previousHash": "B3GCqf1W7PTOv00IaJL6mDHtkI0BJdm6uKtse+E8al8="
      },
-     "id": "2e95cf95-f5fd-4f46-b809-e42fe5239ce8",
-     "hash": "/j2kGpbyC5kydxqq7Gsg+PMovwTtS8T9ZDYUeIVEJLE="
+     "id": "c622fde9-3d09-4b89-8f0f-091711ff8a1a",
+     "hash": "dwCrmvc7EDUtp84S2yRfHOFrd31OuF19wexeEJKgrO4="
   }
 ]
