@@ -4,19 +4,20 @@ Event Chain is a JS library for storing sequential events and validating them us
 
 ## Usage
 
+### Create an Event Chain
 ```js
 var EventChain = require('./EventChain');
 const eventChain = new EventChain();
 ```
 
-## Add events
+### Add events
 ```js
 eventChain.AddEvent("MOVIE_CREATE", { id: 1, title: 'Hackers', released: '1995' });
 
 eventChain.AddEvent("MOVIE_UPDATE_RATING", { id: 1, mpaaRating: 'PG-13' });
 ```
 
-## Example Event Chain
+### Example Event Chain
 ```json
 [
   {
@@ -49,6 +50,11 @@ eventChain.AddEvent("MOVIE_UPDATE_RATING", { id: 1, mpaaRating: 'PG-13' });
      "hash": "B3GCqf1W7PTOv00IaJL6mDHtkI0BJdm6uKtse+E8al8="
   }
 ]
+```
+
+### Get an object projection
+```js
+{ id: 1, title: 'Hackers', released: '1995', mpaaRating: 'PG-13' }
 ```
 
 ## More on Event Sourcing
