@@ -54,7 +54,7 @@ eventChain.AddEvent("MOVIE_UPDATE_RATING", { id: 1, mpaaRating: 'PG-13' });
 
 ### Get an object projection
 ```js
-{ id: 1, title: 'Hackers', released: '1995', mpaaRating: 'PG-13' }
+eventChain.GetProjection('MOVIE', 1) // { id: 1, title: 'Hackers', released: '1995', mpaaRating: 'PG-13' }
 ```
 
 ## More on Event Sourcing
